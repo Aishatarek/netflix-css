@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fruktur&family=Open+Sans:wght@300&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+    font-family: 'Open Sans', sans-serif;
+    
+ }
+body{
+    background-color:black ;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+header img{
+width: 200px;
+}
+header select{
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    font-size: 18px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+header select option{
+    background-color: gray;
+
+}
+header a{
+text-decoration: none;
+background-color: #e20813;
+color: white;
+padding: 8px 18px ;
+font-size: 18px;
+border-radius: 3px;
+}
+/***************first section**********************/
+.Fsec{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url(images/AE-en-20210817-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-size: cover;
+position: relative;
+
+}
+.Fsec::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+   background-image: linear-gradient(to bottom , black , transparent);
+    z-index: 1;
+}
+.Fsec::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+   background-image: linear-gradient(to top , black , transparent);
+    z-index: 1;
+}
+.Fsec div{
+    z-index: 2;
+}
+.Fsec h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.Fsec h2{
+    font-size: 25px;
+    margin: 5px 0px;
+}
+.Fsec form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.Fsec form input[type="email"]{
+    height: 60px;
+    width: 60%;
+    outline: none;
+    border: 1px solid gray;
+}
+.Fsec form input[type="email"]::placeholder{
+    color: gray;
+    font-size: 20px;
+}
+.Fsec form input[type="submit"]{
+height: 60px;
+padding: 10px;
+border: none;
+background-color: #e20813;
+color: white;
+font-size: 20px;
+
+}
+/***************second section********************/
+.SecondSec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    border-bottom: 8px solid #222;
+}
+.SecondSec h3{
+    font-size: 40px;
+
+}
+.SecondSec p{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.SecondSec .SecondSecDiv{
+    position: relative;
+}
+.SecondSec div{
+width: 40%;
+}
+.SecondSec .SecondSecDiv video ,.SecondSec .SecondSecDiv img{
+    width: 100%;
+}
+.SecondSec .SecondSecDiv video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/************third section***************/
+.thirdSec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    border-bottom: 8px solid #222;
+}
+.thirdSec img , .thirdSec div{
+    width: 40%;
+}
+.thirdSec div h3{
+    font-size: 40px;
+
+}
+.thirdSec div p{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+/*********fourth section************/
+.SecondSecDiv2{
+position: relative;
+}
+.SecondSec .SecondSecDiv2 img{
+    width: 100%;
+}
+.SecondSec .SecondSecDiv2 video {
+    width: 64%;
+    position: absolute;
+    top: 50px;
+    left: 18%;
+    z-index: -1;
+    
+}
+
+@media only screen and (max-width:768px) {
+    .SecondSec h3{
+        font-size: 25px;
+    
+    }
+    .SecondSec p{
+        font-size: 18px;
+
+    }
+    .thirdSec div h3{
+        font-size: 25px;
+    
+    }
+    .thirdSec div p{
+        font-size: 18px;
+
+    }  
+}
+@media only screen and (max-width:576px) {
+    .SecondSec{
+        flex-direction: column;
+        padding: 20px 0;
+
+    }
+    .SecondSec div{
+        margin: 10px 0;
+
+    }
+    .thirdSec{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .thirdSec div {
+   margin: 20px 0;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/******************/
+.lastSec{
+    padding: 20px 100px;
+    border-bottom: 8px solid #222;
+}
+.list{
+    width: 60%;
+    margin: auto;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    background-color: #303030;
+    text-decoration: none;
+    color: white;
+    padding:10px 30px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.icon{
+    position: relative;
+}
+.icon::before ,.icon::after{
+content: '';
+width: 30px;
+height: 5px;
+background-color: white;
+position: absolute;
+top: 10px;
+left: -100px;
+}
+.icon::after{
+  transform: rotate(90deg);
+    transition: all 1s ease-out;
+}
+.texttt{
+    background-color: #303030; 
+    color: white;
+    padding:10px 30px;
+    font-size: 30px;
+    margin-top: 10px;
+    display: none;
+}
+.item1:target .texttt{
+display: block;
+
+}
+.item1:target .icon::after{
+transform: rotateY(90deg);
+}
+@media only screen and (max-width:768px) {
+    .lastSec{
+        padding: 20px 50px;
+
+    }
+    .list{
+        width: 90%;
+
+    }
+    .icon::before ,.icon::after{
+        left: 0;
+
+
+    }
+    .item{
+        font-size: 20px;
+
+
+    }
+    .texttt{
+        font-size: 20px;
+    }
+}
+/**************footer****************/
+footer{
+    padding: 30px 100px;
+}
+footer a{
+    color: #757575;
+    text-decoration: none;
+    font-size: 18px;
+}
+footer a:hover{
+    border-bottom: 1px solid #757575;
+}
+.footerDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+footer ul li{
+    margin-top: 10px;
+    list-style: none;
+}
+footer select{
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    font-size: 18px;
+    margin-right: 20px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+footer select option{
+    background-color: gray;
+
+}
+footer p{
+    color: #757575;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:768px) {
+    .footerDiv{
+        flex-direction: column;
+
+    }
+
+}
