@@ -250,18 +250,17 @@ header a:hover {
     background-color: #303030;
     color: white;
     cursor: pointer;
-    padding: 13px  20px;
+    padding: 13px 20px;
     width: 100%;
     border: none;
     text-align: left;
-    outline: none;
     font-size: 30px;
     transition: 0.4s;
     border-bottom: 1px solid black;
-     margin-top: 10px;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .theItem a {
@@ -303,7 +302,7 @@ header a:hover {
 }
 
 .theItem:target .text {
-   display: block;
+    display: block;
 }
 
 .theItem:target .icon::after {
@@ -413,6 +412,10 @@ footer p {
     }
 
     /******first section**********/
+    .Fsec {
+        padding: 20px;
+    }
+
     .Fsec h2 {
         font-size: 54px;
     }
@@ -478,17 +481,28 @@ footer p {
         width: 90%;
     }
 
+    .item {
+        padding: 13px 30px;
+    }
+
     .icon::before,
     .icon::after {
-        left: 0;
+        width: 20px;
+        height: 5px;
+
     }
 
-    .item {
-        font-size: 20px;
+    .icon::before,
+    .icon::after {
+        left: 0%;
     }
 
-    .texttt {
-        font-size: 20px;
+    .theItem a {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 18px;
     }
 
 }
